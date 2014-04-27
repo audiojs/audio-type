@@ -2,7 +2,7 @@
 'use strict';
 var readChunk = require('read-chunk');
 var pkg = require('./package.json');
-var imageType = require('./index');
+var audioType = require('./index');
 var input = process.argv[2];
 
 function help() {
@@ -18,7 +18,7 @@ function help() {
 }
 
 function init(data) {
-	var type = imageType(data);
+	var type = audioType(data);
 
 	if (type) {
 		console.log(type);
