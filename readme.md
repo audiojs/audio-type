@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/hemanth/audio-type.png?label=ready&title=Ready)](https://waffle.io/hemanth/audio-type)
 # audio-type [![Build Status](https://travis-ci.org/hemanth/audio-type.svg?branch=master)](https://travis-ci.org/hemanth/audio-type)
 
 > Detect the audio type of a Buffer/Uint8Array
