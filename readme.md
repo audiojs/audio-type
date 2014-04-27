@@ -38,7 +38,7 @@ xhr.open('GET', 'meow.flac');
 xhr.responseType = 'arraybuffer';
 
 xhr.onload = function () {
-	imageType(new Uint8Array(this.response));
+	audioType(new Uint8Array(this.response));
 	//=> flac
 };
 
