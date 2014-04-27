@@ -1,0 +1,52 @@
+{
+  "name": "audio-type",
+  "version": "0.1.0",
+  "description": "Detect the audio type of a Buffer/Uint8Array",
+  "license": "MIT",
+  "repository": "hemanth/audio-type",
+  "bin": {
+    "audio-type": "cli.js"
+  },
+  "author": {
+    "name": "Hemanth.HM",
+    "email": "hemanth.hm@gmail.com",
+    "url": "http://h3manth.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "browser": "browserify -s $npm_package_name -o browser.js ."
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "audio",
+    "sound",
+    "wav",
+    "mp3",
+    "flac",
+    "type",
+    "detect",
+    "check",
+    "is",
+    "binary",
+    "buffer",
+    "uint8array",
+    "cli"
+  ],
+  "dependencies": {
+    "read-chunk": "^0.1.0",
+    "is-mp3": "^0.1.0",
+    "is-ogg": "^0.1.0",
+    "is-wav": "^0.1.0",
+    "is-flac": "^0.1.0"
+  },
+  "devDependencies": {
+    "browserify": "^3.0.0",
+    "mocha": "*"
+  }
+}
