@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Detect the image type of a Buffer/Uint8Array",
   "license": "MIT",
-  "repo": "hemanth/audio-type",
+  "repository": "hemanth/audio-type",
   "scripts": [
     "index.js"
   ],
