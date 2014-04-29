@@ -24,7 +24,7 @@ $ component install hemanth/audio-type
 
 ```js
 var readChunk = require('read-chunk'); // npm install read-chunk
-var imageType = require('audio-type');
+var audioType = require('audio-type');
 var buffer = readChunk.sync('meow.wav', 0, 12);
 
 audioType(buffer);
