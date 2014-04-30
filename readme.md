@@ -51,7 +51,7 @@ xhr.send();
 
 ### audioType(buffer)
 
-Returns: [`mp3`](https://github.com/hemanth/is-mp3), [`oga`](https://github.com/hemanth/is-ogg), [`flac`](https://github.com/hemanth/is-flac), [`wav`](https://github.com/hemanth/is-wav), `false`
+Returns: [`mp3`](https://github.com/hemanth/is-mp3), [`oga`](https://github.com/hemanth/is-ogg), [`flac`](https://github.com/hemanth/is-flac), [`wav`](https://github.com/hemanth/is-wav), [`m4a`](https://github.com/hemanth/is-m4a), `false`
 
 #### buffer
 

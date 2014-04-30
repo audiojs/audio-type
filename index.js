@@ -20,5 +20,9 @@ module.exports = function (buf) {
 		return 'flac';
 	}
 
+	if (require('is-m4a')(buf)) {
+		return 'm4a';
+	}
+
 	return false;
 };
