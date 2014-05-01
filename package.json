@@ -39,11 +39,12 @@
     "cli"
   ],
   "dependencies": {
-    "read-chunk": "^0.1.0",
+    "is-flac": "^0.1.0",
+    "is-m4a": "^0.1.1",
     "is-mp3": "^0.1.0",
     "is-ogg": "^0.1.0",
     "is-wav": "^0.1.0",
-    "is-flac": "^0.1.0"
+    "read-chunk": "^0.1.0"
   },
   "devDependencies": {
     "browserify": "^3.0.0",
