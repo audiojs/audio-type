@@ -1,6 +1,6 @@
 {
   "name": "audio-type",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Detect the audio type of a Buffer/Uint8Array",
   "license": "MIT",
   "repository": "hemanth/audio-type",
