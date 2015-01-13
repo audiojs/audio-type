@@ -41,7 +41,7 @@
   "dependencies": {
     "is-flac": "^1.0.0",
     "is-m4a": "^1.0.0",
-    "is-mp3": "^1.0.0",
+    "is-mp3": "^1.1.0",
     "is-ogg": "^1.0.0",
     "is-wav": "^1.0.0",
     "read-chunk": "^1.0.0"
