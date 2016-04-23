@@ -43,7 +43,7 @@
     "is-m4a": "^1.1.0",
     "is-mp3": "^1.1.0",
     "is-ogg": "^1.1.0",
-    "is-wav": "^1.1.0",
+    "is-wav": "^1.1.2",
     "read-chunk": "^2.0.0"
   },
   "devDependencies": {
