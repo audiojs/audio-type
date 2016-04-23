@@ -39,7 +39,7 @@
     "cli"
   ],
   "dependencies": {
-    "is-flac": "^1.1.0",
+    "is-flac": "^1.1.2",
     "is-m4a": "^1.1.0",
     "is-mp3": "^1.1.0",
     "is-ogg": "^1.1.0",
