@@ -48,6 +48,6 @@
   },
   "devDependencies": {
     "browserify": "11.2.0",
-    "mocha": "*"
+    "mocha": "2.5.0"
   }
 }
