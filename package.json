@@ -16,7 +16,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "node test",
     "browser": "browserify -s $npm_package_name -o browser.js ."
   },
   "files": [
@@ -48,6 +48,6 @@
   },
   "devDependencies": {
     "browserify": "14.0.0",
-    "mocha": "*"
+    "tape": "^4.6.3"
   }
 }
