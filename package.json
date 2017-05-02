@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Detect the audio type of a Buffer/Uint8Array",
   "license": "MIT",
-  "repository": "hemanth/audio-type",
+  "repository": "audiojs/audio-type",
   "bin": {
     "audio-type": "cli.js"
   },

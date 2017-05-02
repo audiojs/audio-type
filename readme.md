@@ -1,5 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/hemanth/audio-type.png?label=ready&title=Ready)](https://waffle.io/hemanth/audio-type)
-# audio-type [![Build Status](https://travis-ci.org/hemanth/audio-type.svg?branch=master)](https://travis-ci.org/hemanth/audio-type)
+# audio-type [![Build Status](https://travis-ci.org/audiojs/audio-type.svg?branch=master)](https://travis-ci.org/audiojs/audio-type) [![stable](https://img.shields.io/badge/stability-stable-brightgreen.svg)](http://github.com/badges/stability-badges) [![Greenkeeper badge](https://badges.greenkeeper.io/audiojs/audio-type.svg)](https://greenkeeper.io/) [![npm](https://img.shields.io/npm/v/audio-type.svg)](https://www.npmjs.com/package/audio-type) [![license](https://img.shields.io/npm/l/audio.svg)](https://www.npmjs.com/package/audio-type)
 
 > Detect the audio type of a Buffer/Uint8Array
 
@@ -14,7 +13,7 @@ $ bower install --save audio-type
 ```
 
 ```sh
-$ component install hemanth/audio-type
+$ component install audiojs/audio-type
 ```
 
 
