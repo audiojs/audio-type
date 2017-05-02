@@ -47,7 +47,7 @@
     "read-chunk": "^2.0.0"
   },
   "devDependencies": {
-    "browserify": "14.0.0",
+    "browserify": "14.3.0",
     "mocha": "*"
   }
 }
