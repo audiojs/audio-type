@@ -53,7 +53,5 @@ It only needs the first 12 bytes.
 
 ## License
 
-MIT
-
-<p align=center><a href="https://github.com/krishnized/license/">🕉</a></p>
+MIT <a href="https://github.com/krishnized/license/">ॐ</a>
 
