@@ -43,7 +43,7 @@ xhr.send();
 
 ### audioType(buffer)
 
-Returns: [`mp3`](https://github.com/hemanth/is-mp3), [`oga`](https://github.com/hemanth/is-ogg), [`flac`](https://github.com/hemanth/is-flac), [`wav`](https://github.com/hemanth/is-wav), [`m4a`](https://github.com/hemanth/is-m4a)
+Returns: `'mp3'`, `'oga'`, `'flac'`, `'wav'`, `'m4a'`
 
 #### buffer
 
@@ -53,4 +53,7 @@ It only needs the first 12 bytes.
 
 ## License
 
-MIT © [Hemanth.HM](http://H3manth.com)
+MIT
+
+<p align=center><a href="https://github.com/krishnized/license/">🕉</a></p>
+
