@@ -1,6 +1,6 @@
 import assert from 'assert';
 import readChunk from 'read-chunk';
-import audioType from './index.js';
+import audioType from './audio-type.js';
 import test from 'tape'
 
 function check(filename) {

@@ -13,8 +13,8 @@ $ npm i audio-type
 ##### Node.js
 
 ```js
-var readChunk = require('read-chunk'); // npm install read-chunk
-var audioType = require('audio-type');
+import readChunk from 'read-chunk'; // npm install read-chunk
+import audioType from 'audio-type';
 var buffer = readChunk.sync('meow.wav', 0, 12);
 
 audioType(buffer);
@@ -24,6 +24,8 @@ audioType(buffer);
 ##### Browser
 
 ```js
+import audioType from './audio-type.js'
+
 var xhr = new XMLHttpRequest();
 xhr.open('GET', 'meow.flac');
 xhr.responseType = 'arraybuffer';
