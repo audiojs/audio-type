@@ -1,4 +1,4 @@
-# audio-type [![stable](https://img.shields.io/badge/stability-stable-brightgreen.svg)](http://github.com/badges/stability-badges) [![npm](https://img.shields.io/npm/v/audio-type.svg)](https://www.npmjs.com/package/audio-type) [![license](https://img.shields.io/npm/l/audio.svg)](https://www.npmjs.com/package/audio-type)
+# audio-type [![test](https://github.com/audiojs/audio-type/actions/workflows/test.js.yml/badge.svg)](https://github.com/audiojs/audio-type/actions/workflows/test.js.yml) [![stable](https://img.shields.io/badge/stability-stable-brightgreen.svg)](http://github.com/badges/stability-badges) [![npm](https://img.shields.io/npm/v/audio-type.svg)](https://www.npmjs.com/package/audio-type) [![license](https://img.shields.io/npm/l/audio.svg)](https://www.npmjs.com/package/audio-type)
 
 > Detect the audio type of a ArrayBuffer/Uint8Array
 
