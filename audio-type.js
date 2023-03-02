@@ -1,4 +1,4 @@
-export default function detectType (buf) {
+export default function audioType (buf) {
 	if (!buf) return;
 
 	buf = new Uint8Array(buf.buffer || buf)

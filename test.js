@@ -1,4 +1,4 @@
-import assert from 'assert';
+import assert from 'node:assert';
 import readChunk from 'read-chunk';
 import audioType from './audio-type.js';
 import test from 'tape'
