@@ -1,6 +1,6 @@
 {
   "name": "audio-type",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Detect the audio type of a Buffer/Uint8Array",
   "license": "MIT",
   "repository": "audiojs/audio-type",
