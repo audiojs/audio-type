@@ -9,6 +9,7 @@ export default function audioType (buf) {
 	if (isM4a(buf)) return 'm4a';
 	if (isOpus(buf)) return 'opus'; // overlaps with ogg, so must come first
 	if (isOgg(buf)) return 'oga';
+	if (isQoa(buf)) return 'qoa';
 };
 
 export function isMp3 (buf) {
@@ -81,4 +82,9 @@ export function isOpus(buf) {
 		buf[33] === 101 &&
 		buf[34] === 97 &&
 		buf[35] === 100;
+}
+
+export function isQoa(buf) {
+	if (!buf) return
+	return (buf[0] === 0x71 && buf[1] === 0x6f && buf[2] === 0x61 && buf[3] === 0x66)
 }

@@ -9,6 +9,7 @@ function check(filename) {
 test('should detect audio type from Buffer', function (t) {
 	t.equal(check('fixture.mp3'), 'mp3');
 	t.equal(check('fixture.wav'), 'wav');
+	t.equal(check('fixture.qoa'), 'qoa');
 	t.equal(check('fixture.png'), undefined);
 	t.end()
 });
