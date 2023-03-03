@@ -43,7 +43,7 @@ xhr.send();
 
 ### audioType(buffer)
 
-Returns: `'mp3'`, `'oga'`, `'flac'`, `'wav'`, `'m4a'`
+Returns: `'mp3'`, `'oga'`, `'flac'`, `'wav'`, `'m4a'`, `'opus'`, `'qoa'`
 
 #### buffer
 
