@@ -1,4 +1,3 @@
-import assert from 'node:assert';
 import readChunk from 'read-chunk';
 import audioType from './audio-type.js';
 import test from 'tape'
@@ -8,8 +7,8 @@ function check(filename) {
 }
 
 test('should detect audio type from Buffer', function (t) {
-	assert.strictEqual(check('fixture.mp3'), 'mp3');
-	assert.strictEqual(check('fixture.wav'), 'wav');
-	assert.strictEqual(check('fixture.png'), undefined);
+	t.equal(check('fixture.mp3'), 'mp3');
+	t.equal(check('fixture.wav'), 'wav');
+	t.equal(check('fixture.png'), undefined);
 	t.end()
 });
