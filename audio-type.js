@@ -5,10 +5,10 @@ export default function audioType (buf) {
 
 	if (isWav(buf)) return 'wav';
 	if (isMp3(buf)) return 'mp3';
-	if (isOgg(buf)) return 'oga';
 	if (isFlac(buf)) return 'flac';
 	if (isM4a(buf)) return 'm4a';
-	if (isOpus(buf)) return 'opus';
+	if (isOpus(buf)) return 'opus'; // overlaps with ogg, so must come first
+	if (isOgg(buf)) return 'oga';
 };
 
 export function isMp3 (buf) {
