@@ -1,6 +1,6 @@
 {
   "name": "audio-type",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "Detect the audio type of a Buffer/Uint8Array",
   "license": "MIT",
   "repository": "audiojs/audio-type",
@@ -21,18 +21,24 @@
     "audio-type.js"
   ],
   "keywords": [
-    "audiojs",
     "audio",
-    "sound",
-    "wav",
-    "mp3",
-    "flac",
     "type",
     "detect",
-    "check",
-    "is",
-    "binary",
-    "uint8array"
+    "format",
+    "wav",
+    "mp3",
+    "aac",
+    "flac",
+    "ogg",
+    "opus",
+    "m4a",
+    "aiff",
+    "midi",
+    "webm",
+    "amr",
+    "wma",
+    "caf",
+    "qoa"
   ],
   "devDependencies": {
     "read-chunk": "^2.0.0",

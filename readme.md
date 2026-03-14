@@ -15,7 +15,7 @@ $ npm i audio-type
 ```js
 import readChunk from 'read-chunk'; // npm install read-chunk
 import audioType from 'audio-type';
-var buffer = readChunk.sync('meow.wav', 0, 12);
+var buffer = readChunk.sync('meow.wav', 0, 64);
 
 audioType(buffer);
 //=> wav
@@ -43,13 +43,13 @@ xhr.send();
 
 ### audioType(buffer)
 
-Returns: `'mp3'`, `'oga'`, `'flac'`, `'wav'`, `'m4a'`, `'opus'`, `'qoa'`
+Returns: `'wav'`, `'aiff'`, `'mp3'`, `'aac'`, `'flac'`, `'m4a'`, `'opus'`, `'oga'`, `'qoa'`, `'mid'`, `'caf'`, `'wma'`, `'amr'`, `'webm'`
 
 #### buffer
 
 Type: `buffer` *(Node.js)*, `arrayBuffer`, `uint8array`
 
-It only needs the first 12 bytes.
+It only needs the first 64 bytes.
 
 ## License
 
