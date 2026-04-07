@@ -5,6 +5,7 @@
   "license": "MIT",
   "repository": "audiojs/audio-type",
   "type": "module",
+  "sideEffects": false,
   "main": "audio-type.js",
   "author": {
     "name": "Hemanth.HM",
