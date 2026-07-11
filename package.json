@@ -1,6 +1,6 @@
 {
   "name": "audio-type",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Detect the audio type of a Buffer/Uint8Array",
   "license": "MIT",
   "repository": "audiojs/audio-type",
@@ -44,5 +44,6 @@
   "devDependencies": {
     "read-chunk": "^2.0.0",
     "tape": "^4.6.3"
-  }
+  },
+  "funding": "https://github.com/sponsors/audiojs"
 }
