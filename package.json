@@ -1,6 +1,6 @@
 {
   "name": "audio-type",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "description": "Detect the audio type of a Buffer/Uint8Array",
   "license": "MIT",
   "repository": "audiojs/audio-type",
@@ -39,7 +39,10 @@
     "amr",
     "wma",
     "caf",
-    "qoa"
+    "qoa",
+    "avi",
+    "mkv",
+    "matroska"
   ],
   "devDependencies": {
     "read-chunk": "^2.0.0",

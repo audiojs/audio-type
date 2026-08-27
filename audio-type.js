@@ -16,7 +16,9 @@ export default function audioType (buf) {
 	if (isCaf(buf)) return 'caf';
 	if (isWma(buf)) return 'wma';
 	if (isAmr(buf)) return 'amr';
+	if (isMkv(buf)) return 'mkv';
 	if (isWebm(buf)) return 'webm';
+	if (isAvi(buf)) return 'avi';
 };
 
 export function isMp3 (buf) {
@@ -138,4 +140,20 @@ export function isAmr(buf) {
 export function isWebm(buf) {
 	if (!buf || buf.length < 4) return
 	return buf[0] === 0x1a && buf[1] === 0x45 && buf[2] === 0xdf && buf[3] === 0xa3
+}
+
+// RIFF container with 'AVI ' form type
+export function isAvi(buf) {
+	if (!buf || buf.length < 12) return
+	return buf[0] === 82 && buf[1] === 73 && buf[2] === 70 && buf[3] === 70 &&
+		buf[8] === 65 && buf[9] === 86 && buf[10] === 73 && buf[11] === 32
+}
+
+// EBML header whose DocType is "matroska" (WebM declares "webm")
+export function isMkv(buf) {
+	if (!isWebm(buf)) return
+	let n = Math.min(buf.length, 64)
+	for (let i = 4; i < n - 8; i++)
+		if (buf[i] === 0x42 && buf[i + 1] === 0x82) // DocType element id
+			return buf[i + 3] === 109 && buf[i + 4] === 97 && buf[i + 5] === 116 && buf[i + 6] === 114 // "matr"
 }
