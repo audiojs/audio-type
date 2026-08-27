@@ -23,6 +23,8 @@ test('should detect audio type from Buffer', function (t) {
 	t.equal(check('fixture.webm'), 'webm');
 	t.equal(check('fixture.avi'), 'avi');
 	t.equal(check('fixture.mkv'), 'mkv');
+	t.equal(check('fixture.ac3'), 'ac3');
+	t.equal(check('fixture.dts'), 'dts');
 	t.equal(check('fixture.png'), undefined);
 	t.end()
 });

@@ -43,7 +43,7 @@ xhr.send();
 
 ### audioType(buffer)
 
-Returns: `'wav'`, `'aiff'`, `'mp3'`, `'aac'`, `'flac'`, `'m4a'`, `'opus'`, `'oga'`, `'qoa'`, `'mid'`, `'caf'`, `'wma'`, `'amr'`, `'webm'`, `'mkv'`, `'avi'`
+Returns: `'wav'`, `'aiff'`, `'mp3'`, `'aac'`, `'flac'`, `'m4a'`, `'opus'`, `'oga'`, `'qoa'`, `'mid'`, `'caf'`, `'wma'`, `'amr'`, `'webm'`, `'mkv'`, `'avi'`, `'ac3'`, `'dts'`
 
 #### buffer
 

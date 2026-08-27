@@ -16,6 +16,8 @@ export default function audioType (buf) {
 	if (isCaf(buf)) return 'caf';
 	if (isWma(buf)) return 'wma';
 	if (isAmr(buf)) return 'amr';
+	if (isAc3(buf)) return 'ac3';
+	if (isDts(buf)) return 'dts';
 	if (isMkv(buf)) return 'mkv';
 	if (isWebm(buf)) return 'webm';
 	if (isAvi(buf)) return 'avi';
@@ -156,4 +158,18 @@ export function isMkv(buf) {
 	for (let i = 4; i < n - 8; i++)
 		if (buf[i] === 0x42 && buf[i + 1] === 0x82) // DocType element id
 			return buf[i + 3] === 109 && buf[i + 4] === 97 && buf[i + 5] === 116 && buf[i + 6] === 114 // "matr"
+}
+
+// AC-3 syncword 0x0B77 followed by a valid frame-size code (E-AC-3 shares the syncword; bsid ≤ 8 means AC-3)
+export function isAc3(buf) {
+	if (!buf || buf.length < 6) return
+	return buf[0] === 0x0B && buf[1] === 0x77 && (buf[4] & 0x3F) < 38 && (buf[5] >> 3) <= 8
+}
+
+// DTS core syncword 0x7FFE8001 (14-bit and little-endian variants: 0x1FFFE800, 0xFE7F0180)
+export function isDts(buf) {
+	if (!buf || buf.length < 4) return
+	return (buf[0] === 0x7F && buf[1] === 0xFE && buf[2] === 0x80 && buf[3] === 0x01) ||
+		(buf[0] === 0xFE && buf[1] === 0x7F && buf[2] === 0x01 && buf[3] === 0x80) ||
+		(buf[0] === 0x1F && buf[1] === 0xFF && buf[2] === 0xE8 && buf[3] === 0x00)
 }
