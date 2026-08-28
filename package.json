@@ -1,6 +1,6 @@
 {
   "name": "audio-type",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "Detect the audio type of a Buffer/Uint8Array",
   "license": "MIT",
   "repository": "audiojs/audio-type",
@@ -44,7 +44,23 @@
     "mkv",
     "matroska",
     "ac3",
-    "dts"
+    "eac3",
+    "dts",
+    "wv",
+    "wavpack",
+    "tta",
+    "mpc",
+    "musepack",
+    "ape",
+    "monkeysaudio",
+    "dsf",
+    "dff",
+    "dsd",
+    "mod",
+    "xm",
+    "s3m",
+    "it",
+    "tracker"
   ],
   "devDependencies": {
     "read-chunk": "^2.0.0",
